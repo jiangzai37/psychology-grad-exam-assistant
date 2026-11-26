@@ -1,0 +1,21 @@
+{
+  "name": "psychology-grad-exam-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "本地优先、可配置的心理学考研学习与择校辅助平台",
+  "scripts": {
+    "build": "node build-dashboard.mjs",
+    "collect": "node collect.mjs",
+    "start": "node build-dashboard.mjs",
+    "test": "node validate.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vincentwei1021/psychology-grad-exam-assistant.git"
+  }
+}

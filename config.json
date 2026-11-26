@@ -1,0 +1,202 @@
+{
+  "app": {
+    "name": "考研学习台",
+    "tagline": "PSYCHOLOGY · GRAD EXAM",
+    "description": "本地优先、可配置的心理学考研学习与择校辅助平台",
+    "exportPrefix": "312"
+  },
+  "profile": {
+    "examYear": 2028,
+    "exam": "312 心理学专业基础",
+    "school": "待选择院校",
+    "schoolEn": "TARGET UNIVERSITY",
+    "majorCode": "040200",
+    "major": "心理学（学术学位）",
+    "timezone": "Asia/Shanghai",
+    "examDate": "2027-12-19",
+    "examDateNote": "计划估算，以官方通知为准",
+    "startDate": "2026-11-01",
+    "targetId": "rush",
+    "notice": "当前为示例配置。请先修改目标院校、专业、考试日期和官方来源，再开始使用。"
+  },
+  "targets": [
+    {
+      "id": "rush",
+      "name": "冲刺目标",
+      "school": "冲刺院校（请修改）",
+      "schoolEn": "REACH SCHOOL",
+      "majorCode": "040200",
+      "major": "心理学（学术学位）",
+      "exam": "312 心理学专业基础",
+      "city": "",
+      "priority": "冲刺",
+      "officialUrl": "",
+      "note": "填写录取难度、研究方向、导师匹配和历年分数线等判断依据。"
+    },
+    {
+      "id": "match",
+      "name": "稳妥目标",
+      "school": "稳妥院校（请修改）",
+      "schoolEn": "MATCH SCHOOL",
+      "majorCode": "040200",
+      "major": "心理学（学术学位）",
+      "exam": "312 心理学专业基础",
+      "city": "",
+      "priority": "稳妥",
+      "officialUrl": "",
+      "note": "填写考试科目稳定性、招生人数、复试规则和备选方向。"
+    },
+    {
+      "id": "safe",
+      "name": "保底目标",
+      "school": "保底院校（请修改）",
+      "schoolEn": "SAFETY SCHOOL",
+      "majorCode": "040200",
+      "major": "心理学（学术学位）",
+      "exam": "312 心理学专业基础",
+      "city": "",
+      "priority": "保底",
+      "officialUrl": "",
+      "note": "填写可接受院校、调剂空间和最终决策底线。"
+    }
+  ],
+  "workflow": [
+    {
+      "id": "start",
+      "name": "择校与启动",
+      "range": "考前 12—10 个月",
+      "planPhase": "择校启动期",
+      "startOffsetDays": -400,
+      "endOffsetDays": -300,
+      "goal": "确认考试科目，建立冲稳保目标清单，准备教材与学习节奏。",
+      "tasks": ["核对招生简章与专业目录", "确认初试科目与参考书", "建立院校对比表", "开始基础学科第一轮"]
+    },
+    {
+      "id": "foundation",
+      "name": "基础夯实",
+      "range": "考前 10—6 个月",
+      "planPhase": "基础夯实期",
+      "startOffsetDays": -300,
+      "endOffsetDays": -180,
+      "goal": "完成专业课第一轮，建立知识框架，同步推进英语与基础练习。",
+      "tasks": ["完成教材第一轮", "每章整理框架", "完成基础习题", "开始真题阅读精读"]
+    },
+    {
+      "id": "intensive",
+      "name": "强化提升",
+      "range": "考前 6—3 个月",
+      "planPhase": "强化提升期",
+      "startOffsetDays": -180,
+      "endOffsetDays": -90,
+      "goal": "完成第二轮复习，强化综合题、实验设计和统计应用。",
+      "tasks": ["完成第二轮复习", "按科目整理错题", "每周综合大题", "开始全真模考"]
+    },
+    {
+      "id": "sprint",
+      "name": "冲刺模考",
+      "range": "考前 3—1 个月",
+      "planPhase": "冲刺模考期",
+      "startOffsetDays": -90,
+      "endOffsetDays": -30,
+      "goal": "以真题和模考为主，稳定答题模板，完成报名确认。",
+      "tasks": ["完成真题与模拟卷", "政治选择题与分析题", "英语作文限时训练", "核对报名信息"]
+    },
+    {
+      "id": "final",
+      "name": "初试与复试",
+      "range": "考前 1 个月—复试",
+      "planPhase": "报名与复试",
+      "startOffsetDays": -30,
+      "endOffsetDays": 60,
+      "goal": "保持手感，准备证件与考试用品，初试后立即转入复试准备。",
+      "tasks": ["考前减量保温", "准备复试材料", "复习专业英语与综合面试", "关注调剂与录取信息"]
+    }
+  ],
+  "officialSources": [
+    {
+      "name": "中国研究生招生信息网",
+      "url": "https://yz.chsi.com.cn/",
+      "category": "官方报考信息",
+      "discoverLinks": true
+    },
+    {
+      "name": "中国高等教育学生信息网（学信网）",
+      "url": "https://www.chsi.com.cn/",
+      "category": "官方报考信息"
+    },
+    {
+      "name": "中华人民共和国教育部",
+      "url": "https://www.moe.gov.cn/",
+      "category": "官方报考信息"
+    },
+    {
+      "name": "中国大学MOOC",
+      "url": "https://www.icourse163.org/",
+      "category": "经验帖与课程资源",
+      "discoverLinks": true
+    }
+  ],
+  "curatedResources": [
+    {
+      "name": "中国大学MOOC-普通心理学",
+      "url": "https://www.icourse163.org/course/-1453208205",
+      "category": "经验帖与课程资源",
+      "summary": "心理学基础课程，可用于梳理普通心理学框架与核心概念。"
+    },
+    {
+      "name": "中国大学MOOC-实验心理学",
+      "url": "https://www.icourse163.org/course/scnu-1207048816",
+      "category": "经验帖与课程资源",
+      "summary": "实验心理学课程，覆盖变量控制、实验设计、反应时与效度。"
+    },
+    {
+      "name": "中国大学MOOC-心理统计学",
+      "url": "https://www.icourse163.org/course/-1461522173",
+      "category": "经验帖与课程资源",
+      "summary": "心理统计学基础课程，用于理解描述统计、推断统计与结果解释。"
+    },
+    {
+      "name": "中国大学MOOC-心理测量学",
+      "url": "https://www.icourse163.org/spoc/course/SWUST-1451151173",
+      "category": "经验帖与课程资源",
+      "summary": "心理测量学课程，用于理解测量工具、信度、效度与常模。"
+    },
+    {
+      "name": "研招网-心理学专业介绍",
+      "url": "https://yz.chsi.com.cn/yzzt/xlx_2017jx",
+      "category": "官方报考信息",
+      "summary": "心理学专业介绍与学硕专硕区别说明，可用于报考前的基础了解。"
+    }
+  ],
+  "searchQueries": [
+    "心理学 312 考试大纲 官方",
+    "心理学 学硕 招生简章 专业目录",
+    "心理学 312 实验设计 复习",
+    "心理学 312 统计 方差分析 假设检验 回归",
+    "心理测量 信度 效度 常模 项目分析",
+    "普通心理学 考研 重点 框架",
+    "发展心理学 考研 重点 理论",
+    "当代教育心理学 考研 重点",
+    "社会心理学 考研 重点",
+    "考研政治 马克思主义基本原理 课程",
+    "考研英语 阅读 写作 课程"
+  ],
+  "planFiles": [],
+  "collector": {
+    "catalog": {
+      "url": "",
+      "title": "硕士招生专业目录",
+      "sourceName": "目标院校研究生院",
+      "majorCodes": ["040200"]
+    }
+  },
+  "rules": {
+    "requestTimeoutMs": 25000,
+    "delayMs": 350,
+    "maxSearchResultsPerQuery": 10,
+    "maxDiscoveredLinksPerSource": 15,
+    "maxArticlesPerRun": 100,
+    "keepRawTextChars": 18000,
+    "userAgent": "Mozilla/5.0 (compatible; PsychologyExamAssistant/1.0; local-study-use)"
+  }
+}
