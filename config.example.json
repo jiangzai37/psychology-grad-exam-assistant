@@ -1,75 +1,80 @@
 {
   "app": {
-    "name": "考研学习台",
-    "tagline": "PSYCHOLOGY · GRAD EXAM",
-    "description": "本地优先、可配置的心理学考研学习与择校辅助平台",
-    "exportPrefix": "312"
+    "name": "备考学习台",
+    "tagline": "EXAM STUDY WORKSPACE",
+    "description": "本地优先、可配置的通用考试备考与目标管理平台",
+    "exportPrefix": "study",
+    "brandMark": "学",
+    "storageKey": "exam-study",
+    "workspaceLabel": "备考工作台"
   },
   "profile": {
-    "examYear": 2028,
-    "exam": "312 心理学专业基础",
-    "school": "待选择院校",
-    "schoolEn": "TARGET UNIVERSITY",
-    "majorCode": "040200",
-    "major": "心理学（学术学位）",
+    "examYear": 2027,
+    "examType": "考试",
+    "exam": "我的考试",
+    "organization": "待填写目标机构",
+    "organizationEn": "TARGET ORGANIZATION",
+    "programCode": "",
+    "program": "目标项目",
     "timezone": "Asia/Shanghai",
-    "examDate": "2027-12-19",
-    "examDateNote": "计划估算，以官方通知为准",
-    "startDate": "2026-11-01",
-    "targetId": "rush",
-    "notice": "当前为示例配置。请先修改目标院校、专业、考试日期和官方来源，再开始使用。"
+    "examDate": "2027-12-18",
+    "examDateNote": "示例日期，请按官方安排修改",
+    "startDate": "2026-12-01",
+    "targetId": "primary",
+    "countdownLabel": "距离计划考试日",
+    "notice": "这是通用示例配置。请先填写考试、目标机构、考试日期和官方来源，再替换学习内容。"
   },
   "targets": [
     {
-      "id": "rush",
-      "name": "冲刺目标",
-      "school": "冲刺院校（请修改）",
-      "schoolEn": "REACH SCHOOL",
-      "majorCode": "040200",
-      "major": "心理学（学术学位）",
-      "exam": "312 心理学专业基础",
+      "id": "primary",
+      "name": "首选目标",
+      "organization": "首选机构（请修改）",
+      "organizationEn": "PRIMARY ORGANIZATION",
+      "programCode": "",
+      "program": "目标项目",
+      "exam": "我的考试",
       "city": "",
-      "priority": "冲刺",
+      "priority": "首选",
       "officialUrl": "",
-      "note": "填写录取难度、研究方向、导师匹配和历年分数线等判断依据。"
+      "note": "记录考试要求、准备难度、个人匹配度和需要核对的信息。"
     },
     {
-      "id": "match",
-      "name": "稳妥目标",
-      "school": "稳妥院校（请修改）",
-      "schoolEn": "MATCH SCHOOL",
-      "majorCode": "040200",
-      "major": "心理学（学术学位）",
-      "exam": "312 心理学专业基础",
+      "id": "alternate",
+      "name": "备选目标",
+      "organization": "备选机构（请修改）",
+      "organizationEn": "ALTERNATE ORGANIZATION",
+      "programCode": "",
+      "program": "目标项目",
+      "exam": "我的考试",
       "city": "",
-      "priority": "稳妥",
+      "priority": "备选",
       "officialUrl": "",
-      "note": "填写考试科目稳定性、招生人数、复试规则和备选方向。"
+      "note": "记录考试科目、时间安排、申请条件和可接受的替代方案。"
     },
     {
-      "id": "safe",
-      "name": "保底目标",
-      "school": "保底院校（请修改）",
-      "schoolEn": "SAFETY SCHOOL",
-      "majorCode": "040200",
-      "major": "心理学（学术学位）",
-      "exam": "312 心理学专业基础",
+      "id": "fallback",
+      "name": "第三目标",
+      "organization": "第三机构（请修改）",
+      "organizationEn": "FALLBACK ORGANIZATION",
+      "programCode": "",
+      "program": "目标项目",
+      "exam": "我的考试",
       "city": "",
-      "priority": "保底",
+      "priority": "备选",
       "officialUrl": "",
-      "note": "填写可接受院校、调剂空间和最终决策底线。"
+      "note": "记录可接受的底线、备选路径和最终决策条件。"
     }
   ],
   "workflow": [
     {
       "id": "start",
-      "name": "择校与启动",
+      "name": "目标与启动",
       "range": "考前 12—10 个月",
-      "planPhase": "择校启动期",
+      "planPhase": "目标启动期",
       "startOffsetDays": -400,
       "endOffsetDays": -300,
-      "goal": "确认考试科目，建立冲稳保目标清单，准备教材与学习节奏。",
-      "tasks": ["核对招生简章与专业目录", "确认初试科目与参考书", "建立院校对比表", "开始基础学科第一轮"]
+      "goal": "确认考试范围与要求，建立目标清单，准备核心资料和学习节奏。",
+      "tasks": ["核对官方考试信息", "确认考试范围与资料", "建立目标对比表", "开始第一轮学习"]
     },
     {
       "id": "foundation",
@@ -78,8 +83,8 @@
       "planPhase": "基础夯实期",
       "startOffsetDays": -300,
       "endOffsetDays": -180,
-      "goal": "完成专业课第一轮，建立知识框架，同步推进英语与基础练习。",
-      "tasks": ["完成教材第一轮", "每章整理框架", "完成基础习题", "开始真题阅读精读"]
+      "goal": "完成第一轮学习，建立知识框架，同步推进基础练习。",
+      "tasks": ["完成教材第一轮", "每章整理框架", "完成基础练习", "建立错题记录"]
     },
     {
       "id": "intensive",
@@ -88,8 +93,8 @@
       "planPhase": "强化提升期",
       "startOffsetDays": -180,
       "endOffsetDays": -90,
-      "goal": "完成第二轮复习，强化综合题、实验设计和统计应用。",
-      "tasks": ["完成第二轮复习", "按科目整理错题", "每周综合大题", "开始全真模考"]
+      "goal": "完成第二轮复习，强化综合题、薄弱章节和限时训练。",
+      "tasks": ["完成第二轮复习", "按科目整理错题", "每周综合练习", "开始限时模考"]
     },
     {
       "id": "sprint",
@@ -98,97 +103,43 @@
       "planPhase": "冲刺模考期",
       "startOffsetDays": -90,
       "endOffsetDays": -30,
-      "goal": "以真题和模考为主，稳定答题模板，完成报名确认。",
-      "tasks": ["完成真题与模拟卷", "政治选择题与分析题", "英语作文限时训练", "核对报名信息"]
+      "goal": "以真题和模拟卷为主，稳定答题流程，核对考试安排。",
+      "tasks": ["完成真题与模拟卷", "复盘高频错误", "核对报名或预约信息", "准备考试材料"]
     },
     {
       "id": "final",
-      "name": "初试与复试",
-      "range": "考前 1 个月—复试",
-      "planPhase": "报名与复试",
+      "name": "考试与后续",
+      "range": "考前 1 个月—考后",
+      "planPhase": "考试与后续",
       "startOffsetDays": -30,
       "endOffsetDays": 60,
-      "goal": "保持手感，准备证件与考试用品，初试后立即转入复试准备。",
-      "tasks": ["考前减量保温", "准备复试材料", "复习专业英语与综合面试", "关注调剂与录取信息"]
+      "goal": "保持状态，完成考试，并按需要准备成绩复核或后续环节。",
+      "tasks": ["考前减量保温", "核对证件与考试用品", "完成考试", "准备后续安排"]
     }
   ],
-  "officialSources": [
-    {
-      "name": "中国研究生招生信息网",
-      "url": "https://yz.chsi.com.cn/",
-      "category": "官方报考信息",
-      "discoverLinks": true
-    },
-    {
-      "name": "中国高等教育学生信息网（学信网）",
-      "url": "https://www.chsi.com.cn/",
-      "category": "官方报考信息"
-    },
-    {
-      "name": "中华人民共和国教育部",
-      "url": "https://www.moe.gov.cn/",
-      "category": "官方报考信息"
-    },
-    {
-      "name": "中国大学MOOC",
-      "url": "https://www.icourse163.org/",
-      "category": "经验帖与课程资源",
-      "discoverLinks": true
-    }
+  "resourceCategories": [
+    { "id": "official", "name": "官方考试信息", "icon": "landmark", "tone": "red" },
+    { "id": "study", "name": "备考知识", "icon": "book", "tone": "blue" },
+    { "id": "updates", "name": "目标与机构动态", "icon": "university", "tone": "green" },
+    { "id": "resources", "name": "经验与课程资源", "icon": "compass", "tone": "amber" }
   ],
-  "curatedResources": [
-    {
-      "name": "中国大学MOOC-普通心理学",
-      "url": "https://www.icourse163.org/course/-1453208205",
-      "category": "经验帖与课程资源",
-      "summary": "心理学基础课程，可用于梳理普通心理学框架与核心概念。"
-    },
-    {
-      "name": "中国大学MOOC-实验心理学",
-      "url": "https://www.icourse163.org/course/scnu-1207048816",
-      "category": "经验帖与课程资源",
-      "summary": "实验心理学课程，覆盖变量控制、实验设计、反应时与效度。"
-    },
-    {
-      "name": "中国大学MOOC-心理统计学",
-      "url": "https://www.icourse163.org/course/-1461522173",
-      "category": "经验帖与课程资源",
-      "summary": "心理统计学基础课程，用于理解描述统计、推断统计与结果解释。"
-    },
-    {
-      "name": "中国大学MOOC-心理测量学",
-      "url": "https://www.icourse163.org/spoc/course/SWUST-1451151173",
-      "category": "经验帖与课程资源",
-      "summary": "心理测量学课程，用于理解测量工具、信度、效度与常模。"
-    },
-    {
-      "name": "研招网-心理学专业介绍",
-      "url": "https://yz.chsi.com.cn/yzzt/xlx_2017jx",
-      "category": "官方报考信息",
-      "summary": "心理学专业介绍与学硕专硕区别说明，可用于报考前的基础了解。"
-    }
-  ],
-  "searchQueries": [
-    "心理学 312 考试大纲 官方",
-    "心理学 学硕 招生简章 专业目录",
-    "心理学 312 实验设计 复习",
-    "心理学 312 统计 方差分析 假设检验 回归",
-    "心理测量 信度 效度 常模 项目分析",
-    "普通心理学 考研 重点 框架",
-    "发展心理学 考研 重点 理论",
-    "当代教育心理学 考研 重点",
-    "社会心理学 考研 重点",
-    "考研政治 马克思主义基本原理 课程",
-    "考研英语 阅读 写作 课程"
-  ],
+  "officialSources": [],
+  "curatedResources": [],
+  "searchQueries": [],
   "planFiles": [],
   "collector": {
     "catalog": {
       "url": "",
-      "title": "硕士招生专业目录",
-      "sourceName": "目标院校研究生院",
-      "majorCodes": ["040200"]
-    }
+      "title": "官方考试目录",
+      "sourceName": "目标机构官方网站",
+      "programCodes": []
+    },
+    "keywords": [],
+    "linkKeywords": ["招生", "报考", "考试", "大纲", "真题", "报名", "成绩", "通知", "公告", "课程", "讲义"],
+    "excludeKeywords": ["招聘", "广告", "培训优惠", "加微信"],
+    "trustedDomains": ["edu.cn", "gov.cn", "chsi.com.cn", "icourse163.org"],
+    "searchProviderName": "必应检索",
+    "searchEndpoint": "https://www.bing.com/search?format=rss&q={query}"
   },
   "rules": {
     "requestTimeoutMs": 25000,
@@ -197,6 +148,6 @@
     "maxDiscoveredLinksPerSource": 15,
     "maxArticlesPerRun": 100,
     "keepRawTextChars": 18000,
-    "userAgent": "Mozilla/5.0 (compatible; PsychologyExamAssistant/1.0; local-study-use)"
+    "userAgent": "Mozilla/5.0 (compatible; ExamStudyAssistant/2.0; local-study-use)"
   }
 }
